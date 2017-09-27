@@ -12,12 +12,16 @@ function clearGrid() {
 }
 
 
+var table = document.getElementById('#pixel_canvas');
+//var newRow = table.insertRow();
 
-function makeGrid(){
+function makeGrid(e){
 	for (var rows = 0; rows < width.value; rows++) {
         console.log("r");
+        var newRow = table.insertRow();
+        table.insertRow();
         for (var columns = 0; columns < height.value; columns++) {
-        	$("#pixel_canvas").append("<div class='grid'></div>");
+        	newRow.insertCell();
         }
     }
     
@@ -39,6 +43,7 @@ function makeGrid(){
 		$(".grid").width(300/rows);
 		$(".grid").height(300/columns);
 	}*/
+	e.preventDefault();
 }
 
 $(document).ready(function(){	
