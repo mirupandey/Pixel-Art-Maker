@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #000;
+	display:inline-block;
+}
+
+var x = document.getElementById("input_width").getAttribute("value");
+var y = document.getElementById("input_height").getAttribute("value");
+
+@media only screen and (min-width: 960px){
+	.grid{
+		width: (940/x)px;
+		height: (940/y)px;
+	}
+}
+
+@media only screen and (min-width: 750px){
+	.grid{
+		width: (700/x)px;
+		height: (700/y)px;
+	}
+}
+
+@media only screen and (min-width: 450px){
+	.grid{
+		width: (400/x)px;
+		height: (400/y)px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.grid{
+		width: (300/x)px;
+		height: (300/y)px;
+	}
+}
+
+.grid{
+	cursor: pointer;
+}
