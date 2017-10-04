@@ -12,7 +12,7 @@
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
-    <form id="sizePicker" onsubmit="makeGrid()" method="post">
+    <form id="sizePicker" onsubmit="" method="post">
         Grid Height:
         <input type="number" id="input_height" name="height" min="1">
         Grid Width:
@@ -24,7 +24,9 @@
     <input type="color" name="color" id="colorPicker">
 
     <h2>Design Canvas</h2>
-    <div class="row" id="pixel_canvas"></div>
+    <div id="table" class="row" id="pixel_canvas">
+    		
+    </div>
 
     <script src="jquery-3.2.1.min.js"></script>
     <script src="designs.js"></script>

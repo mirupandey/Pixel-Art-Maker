@@ -76,6 +76,7 @@ var y = document.getElementById("input_height").getAttribute("value");
 	}
 }
 
-.grid{
+#table{
 	cursor: pointer;
+	overflow-x: auto;
 }
