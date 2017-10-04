@@ -1,16 +1,15 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## Choose Grid Size
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+> Choose the width and height of the table to make.
 
-## Instructions
+> The minimum possible width and height is 1 and maximum width and height is 48.
 
-To get started, open `designs.js` and start building out the app's functionality.
+## Make Table
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+> As soon as the submit button is clicked table with given width and height is formed.
 
-## Contributing
+## Changing color of cell on click based on the color chosen
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+> When a cell of the table is clicked the background color of the cell changes to the color chosen in the color picker.
