@@ -42,9 +42,24 @@ $("#sizePicker").submit(function(event){
 		tableSpace.appendChild(tab);
     }
     makeGrid();
-    // add color later 
+    
+    // add color later
+    var valueSelected = "#000";
+
+    $('#colorPicker').on('change', function (e) {
+        var optionSelected = $("option:selected", this);
+        valueSelected = this.value;
+        console.log(valueSelected);
+    });
+
     // before you make the grid in the makeGrid function
     // try to make a fixed size grid with JavaScirpt 
+
+    $("td").click(function(){
+    	console.log(valueSelected);
+        $(this).css("background-color", valueSelected);
+    });
+
 })
 
 function clearGrid() {
